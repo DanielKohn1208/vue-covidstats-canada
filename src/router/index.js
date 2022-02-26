@@ -1,11 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: require('../views/HomeView.vue').default 
+  },
+	{
+    path: '/cases',
+    name: 'cases',
+    component: require('../views/CasesView.vue').default 
   },
 	
 ]
